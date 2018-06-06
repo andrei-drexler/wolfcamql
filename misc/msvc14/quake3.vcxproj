@@ -327,6 +327,7 @@
     <ClCompile Include="..\..\code\botlib\l_script.c" />
     <ClCompile Include="..\..\code\botlib\l_struct.c" />
     <ClCompile Include="..\..\code\client\cl_avi.c" />
+    <ClCompile Include="..\..\code\client\cl_camera.c" />
     <ClCompile Include="..\..\code\client\cl_cgame.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">true</BrowseInformation>
@@ -355,6 +356,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
     <ClCompile Include="..\..\code\client\cl_curl.c" />
+    <ClCompile Include="..\..\code\client\cl_huffyuv.c" />
     <ClCompile Include="..\..\code\client\cl_input.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">true</BrowseInformation>
@@ -469,6 +471,7 @@
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release TA|Win32'">true</BrowseInformation>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
+    <ClCompile Include="..\..\code\game\bg_misc.c" />
     <ClCompile Include="..\..\code\opus-1.2.1\celt\bands.c" />
     <ClCompile Include="..\..\code\opus-1.2.1\celt\celt.c" />
     <ClCompile Include="..\..\code\opus-1.2.1\celt\celt_decoder.c" />
