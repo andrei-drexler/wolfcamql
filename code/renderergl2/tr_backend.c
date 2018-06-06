@@ -2972,8 +2972,9 @@ const void *RB_ExportCubemaps(const void *data)
 	return (const void *)(cmd + 1);
 }
 
-static const void *RB_SkipRenderCommand (const void *data)
+static const void *RB_SkipRenderCommand (const void *raw_data)
 {
+	const char* data = raw_data;
 	data = PADP(data, sizeof(void *));
 
 	switch (*(const int *)data) {
@@ -3031,9 +3032,13 @@ RB_ExecuteRenderCommands
 */
 
 #if 0
-#define dprintf(format, varargs...) ri.Printf(PRINT_ALL, format, ## varargs)
+	#ifdef _MSC_VER
+		#define dprintf(format, ...) ri.Printf(PRINT_ALL, format, __VA_ARGS__)
+	#else
+		#define dprintf(format, varargs...) ri.Printf(PRINT_ALL, format, ## varargs)
+	#endif
 #else
-  #define dprintf(format, varargs...)
+	#define dprintf(format, ...)
 #endif
 
 void RB_ExecuteRenderCommands( const void *data ) {
