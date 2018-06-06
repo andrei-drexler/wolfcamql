@@ -61,6 +61,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
   #define LEGACY_PROTOCOL
 #endif
 
+#ifndef WOLFCAM_VERSION
+  #define WOLFCAM_VERSION			"12.0test19-msvc"
+#endif
+
 // Heartbeat for dpmaster protocol. You shouldn't change this unless you know what you're doing
 #define HEARTBEAT_FOR_MASTER	"DarkPlaces"
 
