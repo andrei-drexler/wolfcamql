@@ -291,6 +291,8 @@
     <ClCompile Include="..\..\code\zlib\trees.c">
       <Filter>zlib</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\build\dynamic\renderergl2\texturenocolor_fp.c" />
+    <ClCompile Include="..\..\build\dynamic\renderergl2\texturenocolor_vp.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\cgame\tr_types.h" />
