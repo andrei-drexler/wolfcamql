@@ -13,16 +13,13 @@ typedef struct thread_t {
     unsigned int identifier;
 } thread_t;
 
-typedef struct thread_attr_t {
-} thread_attr_t;
-
+typedef struct thread_attr_t thread_attr_t;
 typedef struct thread_mutex_t {
     //CRITICAL_SECTION cs;
     void *cs;
 } thread_mutex_t;
 
-typedef struct thread_mutexattr_t {
-} thread_mutexattr_t;
+typedef struct thread_mutexattr_t thread_mutexattr_t;
 
 typedef struct semaphore_t {
     void *s;

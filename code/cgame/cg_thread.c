@@ -15,6 +15,10 @@
 
 #include <errno.h>
 
+#ifdef _MSC_VER
+  #define __attribute__(x)
+#endif
+
 void Com_Printf( const char *msg, ... ) __attribute__ ((format (printf, 1, 2)));
 
 

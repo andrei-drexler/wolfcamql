@@ -31,25 +31,25 @@
 #define av_assert0 assert
 #define av_assert1 assert
 
-#define av_log(context, error_level, format, args...)  Com_Printf("^3" format, ## args)
+#ifdef _MSC_VER
+  #define av_log(context, error_level, format, ...)  Com_Printf("^3" format, __VA_ARGS__)
+#else
+  #define av_log(context, error_level, format, args...)  Com_Printf("^3" format, ## args)
+#endif
 #define av_mallocz(x) calloc(x, 1)
 #define av_malloc(x) malloc(x)
 #define av_freep(x) free(*x)
 #define AVERROR(x) (x)
 //#define emms_c  //FIXME
 
-typedef struct {
-
-} VLC;
+typedef struct VLC VLC;
 
 typedef struct {
     uint8_t *data[AV_NUM_DATA_POINTERS];
     int linesize[AV_NUM_DATA_POINTERS];
 } AVFrame;
 
-typedef struct {
-
-} GetBitContext;
+typedef struct GetBitContext GetBitContext;
 
 typedef struct {
     uint32_t bit_buf;
@@ -67,9 +67,7 @@ typedef struct {
     int id;
 } AVCodec;
 
-typedef struct {
-
-} AVPacket;
+typedef struct AVPacket AVPacket;
 
 typedef struct {
     void *priv_data;
@@ -104,7 +102,7 @@ typedef enum Predictor{
 typedef struct HYuvContext{
     AVCodecContext *avctx;
     Predictor predictor;
-    GetBitContext gb;
+    //GetBitContext gb;
     PutBitContext pb;
     int interlaced;
     int decorrelate;
