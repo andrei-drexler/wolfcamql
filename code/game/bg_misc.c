@@ -5382,13 +5382,13 @@ Handles the sequence numbers
 ===============
 */
 
-#ifdef _DEBUG
+#if defined(_DEBUG) && 0
 void	trap_Cvar_VariableStringBuffer( const char *var_name, char *buffer, int bufsize );
 #endif
 
 void BG_AddPredictableEventToPlayerstate( int newEvent, int eventParm, playerState_t *ps ) {
 
-#ifdef _DEBUG
+#if defined(_DEBUG) && 0
 	{
 		char buf[256];
 		trap_Cvar_VariableStringBuffer("showevents", buf, sizeof(buf));
