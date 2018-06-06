@@ -67,26 +67,26 @@
     <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release TA|Win32'">
-    <OutDir>..\..\build\release_ta-msvc12-x86\</OutDir>
-    <IntDir>..\..\build\release_ta-msvc12-x86\opengl2\</IntDir>
+    <OutDir>..\..\build\release_ta-msvc14-x86\</OutDir>
+    <IntDir>..\..\build\release_ta-msvc14-x86\opengl2\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>renderer_opengl2_x86</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\build\debug-msvc12-x86\</OutDir>
-    <IntDir>..\..\build\debug-msvc12-x86\opengl2\</IntDir>
+    <OutDir>..\..\build\debug-msvc14-x86\</OutDir>
+    <IntDir>..\..\build\debug-msvc14-x86\opengl2\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>renderer_opengl2_x86</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\build\release-msvc12-x86\</OutDir>
-    <IntDir>..\..\build\release-msvc12-x86\opengl2\</IntDir>
+    <OutDir>..\..\build\release-msvc14-x86\</OutDir>
+    <IntDir>..\..\build\release-msvc14-x86\opengl2\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>renderer_opengl2_x86</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">
-    <OutDir>..\..\build\debug_ta-msvc12-x86\</OutDir>
-    <IntDir>..\..\build\debug_ta-msvc12-x86\opengl2\</IntDir>
+    <OutDir>..\..\build\debug_ta-msvc14-x86\</OutDir>
+    <IntDir>..\..\build\debug_ta-msvc14-x86\opengl2\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>renderer_opengl2_x86</TargetName>
   </PropertyGroup>
