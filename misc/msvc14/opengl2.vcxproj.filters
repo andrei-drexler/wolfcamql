@@ -284,6 +284,13 @@
       <Filter>zlib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\renderergl2\tr_dsa.c" />
+    <ClCompile Include="..\..\code\renderercommon\tr_mme.c" />
+    <ClCompile Include="..\..\code\zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\cgame\tr_types.h" />
