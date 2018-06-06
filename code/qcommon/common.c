@@ -21,7 +21,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 // common.c -- misc functions used in client and server
 
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 
 #include "q_shared.h"
 #include "qcommon.h"
