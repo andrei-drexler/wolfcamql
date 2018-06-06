@@ -125,6 +125,8 @@ cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_fp.glsl ..\..\bu
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_vp.glsl ..\..\build\dynamic\renderergl2\ssao_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_fp.glsl ..\..\build\dynamic\renderergl2\texturecolor_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_vp.glsl ..\..\build\dynamic\renderergl2\texturecolor_vp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_fp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_fp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_vp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_fp.glsl ..\..\build\dynamic\renderergl2\tonemap_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_vp.glsl ..\..\build\dynamic\renderergl2\tonemap_vp.c
 </Command>
@@ -210,6 +212,8 @@ cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_fp.glsl ..\..\bu
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_vp.glsl ..\..\build\dynamic\renderergl2\ssao_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_fp.glsl ..\..\build\dynamic\renderergl2\texturecolor_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_vp.glsl ..\..\build\dynamic\renderergl2\texturecolor_vp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_fp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_fp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_vp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_fp.glsl ..\..\build\dynamic\renderergl2\tonemap_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_vp.glsl ..\..\build\dynamic\renderergl2\tonemap_vp.c
 </Command>
@@ -296,6 +300,8 @@ cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_fp.glsl ..\..\bu
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_vp.glsl ..\..\build\dynamic\renderergl2\ssao_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_fp.glsl ..\..\build\dynamic\renderergl2\texturecolor_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_vp.glsl ..\..\build\dynamic\renderergl2\texturecolor_vp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_fp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_fp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_vp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_fp.glsl ..\..\build\dynamic\renderergl2\tonemap_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_vp.glsl ..\..\build\dynamic\renderergl2\tonemap_vp.c
 </Command>
@@ -377,6 +383,8 @@ cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_fp.glsl ..\..\bu
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\ssao_vp.glsl ..\..\build\dynamic\renderergl2\ssao_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_fp.glsl ..\..\build\dynamic\renderergl2\texturecolor_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturecolor_vp.glsl ..\..\build\dynamic\renderergl2\texturecolor_vp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_fp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_fp.c
+cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\texturenocolor_vp.glsl ..\..\build\dynamic\renderergl2\texturenocolor_vp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_fp.glsl ..\..\build\dynamic\renderergl2\tonemap_fp.c
 cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_vp.glsl ..\..\build\dynamic\renderergl2\tonemap_vp.c
 </Command>
@@ -459,6 +467,8 @@ cscript.exe glsl_stringify.vbs ..\..\code\renderergl2\glsl\tonemap_vp.glsl ..\..
     <ClCompile Include="..\..\build\dynamic\renderergl2\ssao_vp.c" />
     <ClCompile Include="..\..\build\dynamic\renderergl2\texturecolor_fp.c" />
     <ClCompile Include="..\..\build\dynamic\renderergl2\texturecolor_vp.c" />
+    <ClCompile Include="..\..\build\dynamic\renderergl2\texturenocolor_fp.c" />
+    <ClCompile Include="..\..\build\dynamic\renderergl2\texturenocolor_vp.c" />
     <ClCompile Include="..\..\build\dynamic\renderergl2\tonemap_fp.c" />
     <ClCompile Include="..\..\build\dynamic\renderergl2\tonemap_vp.c" />
     <ClCompile Include="..\..\code\jpeg-8c\jaricom.c" />
