@@ -5388,6 +5388,7 @@ static void rewind_demo (double wantedTime)
 	memcpy(&cl, &rb->cl, sizeof(clientActive_t));
 	memcpy(&clc, &rb->clc, sizeof(clientConnection_t));
 
+#ifdef USE_VOIP
 	// voip stuff
 	//FIXME check if demo even has voip
 	clc.voipEnabled = clcOrig.voipEnabled;
@@ -5402,6 +5403,7 @@ static void rewind_demo (double wantedTime)
 	memcpy(&clc.voipGain, &clcOrig.voipGain, sizeof(float) * MAX_CLIENTS);
 	memcpy(&clc.voipIgnore, &clcOrig.voipIgnore, sizeof(qboolean) * MAX_CLIENTS);
 	clc.voipMuteAll = clcOrig.voipMuteAll;
+#endif
 
 	scaledtimeOrig = cls.scaledtime;
 	memcpy(&cls, &rb->cls, sizeof(clientStatic_t));
