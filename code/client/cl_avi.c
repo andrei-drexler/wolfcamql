@@ -32,6 +32,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define INDEX_VIDEO_FILENAME_EXT ".vindex.dat"
 #define INDEX_AUDIO_FILENAME_EXT ".aindex.dat"
 
+#ifdef _MSC_VER
+#	define ftello	_ftelli64
+#	define fseeko	_fseeki64
+#endif
+
 
 /*
 #ifndef __APPLE__
