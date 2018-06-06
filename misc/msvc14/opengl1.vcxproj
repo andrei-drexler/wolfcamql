@@ -359,6 +359,7 @@
     <ClCompile Include="..\..\code\renderercommon\tr_image_pcx.c" />
     <ClCompile Include="..\..\code\renderercommon\tr_image_png.c" />
     <ClCompile Include="..\..\code\renderercommon\tr_image_tga.c" />
+    <ClCompile Include="..\..\code\renderercommon\tr_mme.c" />
     <ClCompile Include="..\..\code\renderercommon\tr_noise.c" />
     <ClCompile Include="..\..\code\renderergl1\tr_animation.c" />
     <ClCompile Include="..\..\code\renderergl1\tr_backend.c" />
@@ -387,9 +388,11 @@
     <ClCompile Include="..\..\code\sdl\sdl_glimp.c" />
     <ClCompile Include="..\..\code\zlib\adler32.c" />
     <ClCompile Include="..\..\code\zlib\crc32.c" />
+    <ClCompile Include="..\..\code\zlib\deflate.c" />
     <ClCompile Include="..\..\code\zlib\inffast.c" />
     <ClCompile Include="..\..\code\zlib\inflate.c" />
     <ClCompile Include="..\..\code\zlib\inftrees.c" />
+    <ClCompile Include="..\..\code\zlib\trees.c" />
     <ClCompile Include="..\..\code\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
