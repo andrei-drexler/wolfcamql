@@ -1,6 +1,6 @@
 #include "client.h"
 
-#if 0
+#if 1
 qboolean loadCamera(const char *name)
 {
     return qfalse;
