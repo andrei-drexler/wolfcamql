@@ -271,6 +271,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\cgame\cg_camera.c" />
     <ClCompile Include="..\..\code\cgame\cg_consolecmds.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -283,6 +284,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_dll.c" />
     <ClCompile Include="..\..\code\cgame\cg_draw.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -295,6 +297,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_drawdc.c" />
     <ClCompile Include="..\..\code\cgame\cg_drawtools.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -343,6 +346,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_freeze.c" />
     <ClCompile Include="..\..\code\cgame\cg_info.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -391,17 +395,16 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_mem.c" />
     <ClCompile Include="..\..\code\cgame\cg_newDraw.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">true</BrowseInformation>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release TA|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release TA|Win32'">WIN32;NDEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -453,6 +456,9 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_q3mme_camera.c" />
+    <ClCompile Include="..\..\code\cgame\cg_q3mme_math.c" />
+    <ClCompile Include="..\..\code\cgame\cg_q3mme_scripts.c" />
     <ClCompile Include="..\..\code\cgame\cg_scoreboard.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -489,6 +495,8 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_sound.c" />
+    <ClCompile Include="..\..\code\cgame\cg_spawn.c" />
     <ClCompile Include="..\..\code\cgame\cg_syscalls.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -501,6 +509,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\cg_thread.c" />
     <ClCompile Include="..\..\code\cgame\cg_view.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">WIN32;_DEBUG;_WINDOWS;MISSIONPACK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -525,6 +534,18 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\cgame\sc_misc.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_consolecmds.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_ents.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_event.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_info.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_main.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_playerstate.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_predict.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_servercmds.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_snapshot.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_view.c" />
+    <ClCompile Include="..\..\code\cgame\wolfcam_weapons.c" />
     <ClCompile Include="..\..\code\game\bg_lib.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">true</ExcludedFromBuild>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug TA|Win32'">Disabled</Optimization>
@@ -577,6 +598,7 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="..\..\code\game\bg_xmlparser.c" />
     <ClCompile Include="..\..\code\qcommon\q_math.c" />
     <ClCompile Include="..\..\code\qcommon\q_shared.c" />
     <ClCompile Include="..\..\code\ui\ui_shared.c">
@@ -593,8 +615,51 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\cgame\cg_camera.h" />
+    <ClInclude Include="..\..\code\cgame\cg_consolecmds.h" />
+    <ClInclude Include="..\..\code\cgame\cg_draw.h" />
+    <ClInclude Include="..\..\code\cgame\cg_drawdc.h" />
+    <ClInclude Include="..\..\code\cgame\cg_drawtools.h" />
+    <ClInclude Include="..\..\code\cgame\cg_effects.h" />
+    <ClInclude Include="..\..\code\cgame\cg_ents.h" />
+    <ClInclude Include="..\..\code\cgame\cg_event.h" />
+    <ClInclude Include="..\..\code\cgame\cg_freeze.h" />
+    <ClInclude Include="..\..\code\cgame\cg_info.h" />
     <ClInclude Include="..\..\code\cgame\cg_local.h" />
+    <ClInclude Include="..\..\code\cgame\cg_localents.h" />
+    <ClInclude Include="..\..\code\cgame\cg_main.h" />
+    <ClInclude Include="..\..\code\cgame\cg_marks.h" />
+    <ClInclude Include="..\..\code\cgame\cg_mem.h" />
+    <ClInclude Include="..\..\code\cgame\cg_newdraw.h" />
+    <ClInclude Include="..\..\code\cgame\cg_players.h" />
+    <ClInclude Include="..\..\code\cgame\cg_playerstate.h" />
+    <ClInclude Include="..\..\code\cgame\cg_predict.h" />
     <ClInclude Include="..\..\code\cgame\cg_public.h" />
+    <ClInclude Include="..\..\code\cgame\cg_q3mme_camera.h" />
+    <ClInclude Include="..\..\code\cgame\cg_q3mme_math.h" />
+    <ClInclude Include="..\..\code\cgame\cg_q3mme_scripts.h" />
+    <ClInclude Include="..\..\code\cgame\cg_scoreboard.h" />
+    <ClInclude Include="..\..\code\cgame\cg_servercmds.h" />
+    <ClInclude Include="..\..\code\cgame\cg_snapshot.h" />
+    <ClInclude Include="..\..\code\cgame\cg_sound.h" />
+    <ClInclude Include="..\..\code\cgame\cg_spawn.h" />
+    <ClInclude Include="..\..\code\cgame\cg_syscalls.h" />
+    <ClInclude Include="..\..\code\cgame\cg_thread.h" />
+    <ClInclude Include="..\..\code\cgame\cg_view.h" />
+    <ClInclude Include="..\..\code\cgame\cg_weapons.h" />
+    <ClInclude Include="..\..\code\cgame\sc.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_consolecmds.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_ents.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_event.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_info.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_local.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_main.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_playerstate.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_predict.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_servercmds.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_snapshot.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_view.h" />
+    <ClInclude Include="..\..\code\cgame\wolfcam_weapons.h" />
     <ClInclude Include="..\..\code\game\bg_public.h" />
     <ClInclude Include="..\..\code\qcommon\q_shared.h" />
     <ClInclude Include="..\..\code\qcommon\surfaceflags.h" />
