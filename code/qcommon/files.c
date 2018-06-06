@@ -1655,11 +1655,11 @@ static size_t FS_ReadMapped (void *ptr, size_t size, size_t nmeb, fileHandle_t f
 	}
 
 	if ((fh->mapPos + (size * nmeb)) > fh->mapSize) {
-		memcpy(ptr, fh->mapData + fh->mapPos, fh->mapSize - fh->mapPos);
+		memcpy(ptr, (const byte*)fh->mapData + fh->mapPos, fh->mapSize - fh->mapPos);
 		fh->mapPos = fh->mapSize;
 		return (fh->mapSize - fh->mapPos);
 	} else {
-		memcpy(ptr, fh->mapData + fh->mapPos, size * nmeb);
+		memcpy(ptr, (const byte*)fh->mapData + fh->mapPos, size * nmeb);
 		fh->mapPos += (size * nmeb);
 		return (size * nmeb);
 	}
