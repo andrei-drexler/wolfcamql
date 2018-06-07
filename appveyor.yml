@@ -1,0 +1,8 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration:
+- Release
+- Debug
+build:
+  project: misc/msvc14/ioq3.sln
+  verbosity: minimal
